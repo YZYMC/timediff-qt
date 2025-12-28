@@ -114,22 +114,22 @@ QString MainWindow::formatMixedDuration(int64_t years, int64_t months, int64_t d
     QStringList parts;
     
     if (years != 0) {
-        parts << QString("%1 year").arg(years);
+        parts << QString("%1 y").arg(years);
     }
     if (months != 0) {
-        parts << QString("%1 month").arg(months);
+        parts << QString("%1 mon").arg(months);
     }
     if (days != 0) {
-        parts << QString("%1 day").arg(days);
+        parts << QString("%1 d").arg(days);
     }
     if (hours != 0) {
-        parts << QString("%1 hour").arg(hours);
+        parts << QString("%1 h").arg(hours);
     }
     if (minutes != 0) {
-        parts << QString("%1 minute").arg(minutes);
+        parts << QString("%1 min").arg(minutes);
     }
     if (seconds != 0 || parts.isEmpty()) {
-        parts << QString("%1 second").arg(seconds);
+        parts << QString("%1 s").arg(seconds);
     }
     
     return parts.join(" ");
